@@ -26,7 +26,7 @@ pipe = pipeline(
     device=device,
     
 )
-result = pipe("Interview60Sec.mp4", generate_kwargs={"language": "danish"})
+result = pipe("test_data/danish_news_60_sec.mp4", generate_kwargs={"language": "danish"})
 print(result["text"])
 
 # Print time it took to run the code in minutes
